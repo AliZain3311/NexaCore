@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact NexaCore for digital product and web development services.">
+<title>Contact — NexaCore</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Nexa<span>Core</span></a>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-label="Switch to dark theme" title="Toggle theme">☾</button>
+      <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links">
+        <li><a class="" href="index.html">Home</a></li>
+        <li><a class="" href="services.html">Services</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="contact.html">Let's Talk</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container reveal">
+    <span class="eyebrow">Let's connect</span>
+    <h1>Have an idea? <span class="gradient">Let's build it.</span></h1>
+    <p>Tell us a little about your project. The form includes client-side validation for name, email and message fields.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container contact-grid">
+    <aside class="contact-info reveal">
+      <h2>Start a conversation</h2>
+      <p>Share your goals, project idea or questions and take the first step toward a better digital experience.</p>
+      <div class="contact-item"><small>Email</small><strong>hello@nexacore.example</strong></div>
+      <div class="contact-item"><small>Availability</small><strong>Monday — Friday</strong></div>
+      <div class="contact-item"><small>Response</small><strong>Within 1–2 business days</strong></div>
+    </aside>
+    <div class="form-card reveal">
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" aria-describedby="nameError"><span class="error" id="nameError"></span></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="emailError"><span class="error" id="emailError"></span></div>
+          <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your project..." aria-describedby="messageError"></textarea><span class="error" id="messageError"></span></div>
+          <div class="field full"><button class="btn btn-primary" type="submit">Send Message →</button></div>
+        </div>
+        <div class="success" id="formSuccess" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">NexaCore</div>
+    <div>© <span id="year"></span> NexaCore. Built for Week 2 Web Development.</div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
